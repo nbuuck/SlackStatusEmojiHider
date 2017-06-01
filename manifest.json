@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+
+  "name": "Slack Status Emoji Hider",
+  "description": "Overrides Slack's CSS to hide status emoji in the chat frame.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://*.slack.com/*"],
+      "css": ["hideStatusEmoji.css"]
+    }
+  ]
+}
